@@ -46,8 +46,8 @@ with st.sidebar:
     st.title("🧠 MindCare Companion")
     st.markdown("### Mental Health Resources")
     st.markdown("""
-    - **National Suicide Prevention Lifeline**: 112 (IN)
-    - **International Association for Suicide Prevention**: [www.iasp.info/resources](https://www.iasp.info/resources)
+    - *National Suicide Prevention Lifeline*: 112 (IN)
+    - *International Association for Suicide Prevention*: [www.iasp.info/resources](https://www.iasp.info/resources)
     """)
     
     st.markdown("### Your Current Risk Assessment")
@@ -91,10 +91,10 @@ for message in st.session_state.messages[1:]:  # Skip system prompt
                             
                             with st.expander("Risk Assessment Details"):
                                 st.metric("Current Risk Score", risk_score)
-                                st.write(f"**Level**: {risk_level}")
-                                st.write(f"**Factors**: {factors}")
+                                st.write(f"*Level*: {risk_level}")
+                                st.write(f"*Factors*: {factors}")
                                 if suggestions:
-                                    st.write(f"**Suggestions**: {suggestions}")
+                                    st.write(f"*Suggestions*: {suggestions}")
             else:
                 st.markdown(f"<div class='assistant-message'>{message['content']}</div>", unsafe_allow_html=True)
     else:
