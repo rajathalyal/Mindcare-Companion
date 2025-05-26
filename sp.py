@@ -3,7 +3,7 @@ from groq import Groq
 import time
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 # Set page config
 st.set_page_config(
